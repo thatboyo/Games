@@ -46,7 +46,20 @@
       </style>
 </head>
 <body>
-<div class="text">ZenithHub</div>
+<div class="text" id="random-text"></div>
+<script>
+  const texts = [
+    "ZenithHub",
+    "Here We Go, Folks",
+    "SEA SALT!",
+    "n0li when?",
+    "Where's BlackoutSearch, William?",
+    "Formerly BlackoutGames",
+    "Imagine having a 0.5 GPA",
+    "Don't Get Caught!"
+  ];
+  document.getElementById("random-text").textContent = texts[Math.floor(Math.random() * texts.length)];
+</script>
 
 <script>
   window.onload = function() {
