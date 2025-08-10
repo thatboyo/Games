@@ -83,27 +83,101 @@
             top: 20px;
             right: 20px;
         }
+
+        /* Changelog Modal Styles */
+        #changelog-modal {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #changelog-modal > div {
+            background: #181a1b;
+            color: #00ffff;
+            font-family: Ubuntu, sans-serif;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px #00ffff55;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 8vh;
+            padding: 32px 28px 24px 28px;
+            position: relative;
+        }
+
+        #close-changelog {
+            position: absolute;
+            top: 12px;
+            right: 18px;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #00ffff;
+            font-weight: bold;
+        }
+
+        /* Changelog List Styles */
+        #changelog-modal ul {
+            text-align: left;
+            font-size: 1.1em;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
+    <!-- Changelog Modal -->
+    <div id="changelog-modal">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <span id="close-changelog" style="position:absolute; top:12px; right:18px; font-size:1.5em; cursor:pointer; color:#00ffff; font-weight:bold;">&times;</span>
+        <h2 style="margin-top:0; font-size:2em; text-align:center;">The long-awaited search upd</h2>
+        <ul style="text-align:left; font-size:1.1em; margin-bottom:0; margin-top:0;">
+          <li>New Search!</li>
+          <li>- 12 New Games!</li>
+          <li>- Combined all of the games pages into one</li>
+          <li>- Added search box in games page</li>
+          <li>- Improved UI and button styles</li>
+          <li>- Added this changelog popup</li>
+          <li>- Terminator was removed cuz aeza (the creators of Terminator) vanished and took it with them</li>
+        </ul>
+      </div>
+    </div>
 
     <h1>ZenithHub</h1>
-    <p>Search will reopen when school comes back, along with a bunch of new games and QOL changes and stuff.</p>
-    <p>On the bright side, u get new wallpapers! Ayy! Ehh...</p>
+    <p id="random-text" style="font-size:1.2em; margin:20px 0;"></p>
+    <script>
+        const texts = [
+            "Hi ig",
+            "Ready to play some games?",
+            "THE NETHER",
+            "WE ARE ZENITHUB",
+            "Dont join cults, they make u cookoo",
+            "There is some random creep who keeps begging for character.ai in the request form lol",
+            "If you like skibidi toilet, get tf off my site.",
+            "SPECTRE DO SOMETHING!!",
+            "Fly, Eagles, Fly",
+            "Have a great day!"
+        ];
+        document.getElementById("random-text").textContent = texts[Math.floor(Math.random() * texts.length)];
+    </script>
     <p>Join our Discord to report problems, suggest games via the form, and star ZenithHub on GitHub if you fork it!</p>
     <script type="text/javascript" src="https://www.stat-counter.org/count/hn56"></script><br>
 
 </div>
     <!-- Icon Links -->
     <div class="container">
-        <a href="g@mes.html"><img class="image" src="media/game.png" alt="G@mes"></a>
+        <a href="select.html"><img class="image" src="media/game.png" alt="G@mes"></a>
         <a href="t00ls.html"><img class="image" src="media/tools.png" alt="T00ls"></a>
         <a href="settings.html"><img class="image" src="media/theme.png" alt="S3tt!ngs"></a>
         <a href="https://forms.gle/z7NSXDFTwegpjcUX9" target="_blank"><img class="image" src="media/suggestion.png" alt="Suggest"></a>
     </div>
 
     <!-- Credits: Dont delete this or we're gonna have problems... -->
-     <p>Website created by DotLYHiyou on Github. Assisted by T9 and Skooplayz.</p>
+     <p>Website created by DotLYHiyou on Github. Assisted by T9 and Skooplayz. Additional things by rcreator222 (i think thats his name)</p>
      <!-- Discord Link-->
     <p><a href="https://discord.gg/U8tT8AazXb" target="_blank" style="color: white; text-decoration: underline;">Join the Discord Server</a></p>
 
@@ -137,6 +211,23 @@
                     document.title = "ZenithHub";
                     favicon.href = "favicon.ico";
             }
+        });
+
+        // Changelog modal close logic
+        document.addEventListener("DOMContentLoaded", function() {
+          var modal = document.getElementById("changelog-modal");
+          var closeBtn = document.getElementById("close-changelog");
+          var moreBtn = document.getElementById("more-details-btn");
+          if (closeBtn) {
+            closeBtn.onclick = function() {
+              modal.style.display = "none";
+            };
+          }
+          if (moreBtn) {
+            moreBtn.onclick = function() {
+              window.location.href = "changelog.html";
+            };
+          }
         });
     </script>
 </body>

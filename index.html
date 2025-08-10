@@ -51,14 +51,26 @@
   const texts = [
     "ZenithHub",
     "Here We Go, Folks",
+    "Ima buy me and the boys some pizza after this...",
     "SEA SALT!",
-    "n0li when?",
-    "Where's BlackoutSearch, William?",
+    "50% Vibecoded lol",
     "Formerly BlackoutGames",
-    "Imagine having a 0.5 GPA",
-    "Don't Get Caught!"
+    "Don't Get Caught!",
+    "We are not horses. We are students. And students are...",
+    "Lets get ready to rumbleeeee!!!!!",
+    "FREE SCHLEP",
+    "SPECTRE DO SOMETHING!",
+    // Special entry for image
+    { type: "img", src: "media/AAAAH-.jpg", alt: "AAH" }
   ];
-  document.getElementById("random-text").textContent = texts[Math.floor(Math.random() * texts.length)];
+
+  const random = texts[Math.floor(Math.random() * texts.length)];
+  const textDiv = document.getElementById("random-text");
+  if (typeof random === "string") {
+    textDiv.textContent = random;
+  } else if (random.type === "img") {
+    textDiv.innerHTML = `<img src="${random.src}" alt="${random.alt}" style="max-width:100px;max-height:100px;">`;
+  }
 </script>
 
 <script>

@@ -19,16 +19,6 @@ Visit the live website: [Zenithub](https://blackoutgames.netlify.app)
 - Integrated proxy to navigate the internet freely
 - Hosted on Netlify, Vercel, and Cloudflare Pages.
 
-## Topics
-
-- cloudflare-pages
-- games
-- netlify
-- unblocked
-- vercel
-- website
-
-
 ## Star History
 
 <a href="https://www.star-history.com/#dotlyhiyou/blackoutgames&Date">

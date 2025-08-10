@@ -1,0 +1,400 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Games</title>
+
+</head>
+<body>
+  
+<!-- Move search box and no-results message to the top -->
+<div style="display: flex; justify-content: center; margin-top: 30px;">
+  <input
+    id="game-search"
+    type="text"
+    placeholder="Search games..."
+    style="font-family: Ubuntu, sans-serif; font-size: 1.1em; border-radius: 10px; border: none; padding: 0.8em 1.5em; box-shadow: 0 2px 12px rgba(0,255,255,0.15); outline: none; margin-bottom: 20px; background: #181a1b; color: #00ffff; transition: box-shadow 0.2s;"
+    onfocus="this.style.boxShadow='0 4px 24px #00ffff55';"
+    onblur="this.style.boxShadow='0 2px 12px rgba(0,255,255,0.15)';"
+    autocomplete="off"
+  />
+</div>
+<div id="no-results-message" style="display:none; text-align:center; font-family: Ubuntu, sans-serif; color: #00ffff; font-size: 1.2em; margin-top: 30px; background: rgba(0,0,0,0.7); border-radius: 12px; padding: 18px 24px; box-shadow: 0 2px 16px #00ffff33;">
+  That doesn't exist you idiot. Go request it, idk all of the games that you guys play.
+</div>
+
+<style>
+.button {
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all .2s;
+    border: none;
+    font-family: Ubuntu;
+    font-weight: 425;
+    color: black;
+    background-color: white;
+    padding: 1em 2em;
+    margin: 5px;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: none; /* Removed the white shadow on hover */
+}
+
+.button:active {
+    transform: translateY(-1px);
+}
+
+.button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.button::after {
+    background-color: #fff;
+}
+
+.button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+
+
+
+  .sample {
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+  
+  }
+  .sample:hover {
+    box-shadow:5px 10px 20px #ffffff;
+  }
+
+  .back-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 120px;
+}
+</style>
+  <button class="button" onclick="window.location.href='games/fruit.html'">Fruit Ninja</button>
+  <button class="button" onclick="window.location.href='games/smc.html'">Super Mario Construct </button>
+  <button class="button" onclick="window.location.href='games/metro.html'">Metroid Fusion</button>
+  <button class="button" onclick="window.location.href='games/celeste.html'">Celeste</button>
+  <button class="button" onclick="window.location.href='games/slope.html'">Slope</button>
+  <button class="button" onclick="window.location.href='games/mc.html'" class="btn">Minecraft 1.5.2</button>
+  <button class="button" onclick="window.location.href='games/mc2.html'">Minecraft (Classic)</button>
+  <button class="button" onclick="window.location.href='games/marioboom.html'">Mario Combat</button>
+  <button class="button" onclick="window.location.href='games/smb3.html'">Super Mario Bros 3</button>
+  <button class="button" onclick="window.location.href='games/mariokart.html'">Mario Kart 64</button>
+  <button class="button" onclick="window.location.href='games/roblox.html'">Roblox</button>
+  <button class="button" onclick="window.location.href='games/bald.html'">Baldis Basics</button>
+  <button class="button" onclick="window.location.href='games/vex7.html'">Vex 7</button>
+  <button class="button" onclick="window.location.href='games/volley.html'">Volley Random</button>
+  <button class="button" onclick="window.location.href='games/soccer.html'">Soccer Random</button>
+  <button class="button" onclick="window.location.href='games/cookie.html'">Cookie Clicker</button>
+  <button class="button" onclick="window.location.href='games/supersmash.html'">Super Smash Bros</button>
+  <button class="button" onclick="window.location.href='games/world.html'">Soccer Skills: World Cup</button>
+  <button class="button" onclick="window.location.href='games/drift.html'">Drift Hunters</button>
+  <button class="button" onclick="window.location.href='games/subway.html'">Subway Surfers</button>
+  <button class="button" onclick="window.location.href='games/roof2.html'">Rooftop Snipers 2</button>
+  <button class="button" onclick="window.location.href='games/bitlife.html'">Bitlife</button>
+  <button class="button" onclick="window.location.href='games/fancyp.html'">Fancy Pants Adventure</button>
+  <button class="button" onclick="window.location.href='games/linerider.html'">Line Rider</button>
+  <button class="button" onclick="window.location.href='games/taptap.html'">Tap Goal</button>
+  <button class="button" onclick="window.location.href='games/slope2.html'">Slope 2</button>
+  <button class="button" onclick="window.location.href='games/pokefirered.html'">Pokemon Fire Red</button>
+  <button class="button" onclick="window.location.href='games/pokegreen.html'">Pokemon Leaf Green</button>
+  <button class="button" onclick="window.location.href='games/pokebound.html'">Pokemon Unbound</button>
+  <button class="button" onclick="window.location.href='games/pokemerald.html'">Pokemon Emerald</button>
+  <button class="button" onclick="window.location.href='games/edgesurf.html'">Edge Surf</button>
+  <button class="button" onclick="window.location.href='games/riddle1.html'">Riddle School</button>
+  <button class="button" onclick="window.location.href='games/riddle2.html'">Riddle School 2</button>
+  <button class="button" onclick="window.location.href='games/ovo.html'">OvO</button>
+  <button class="button" onclick="window.location.href='games/fifa2007.html'">Fifa 2007</button>
+  <button class="button" onclick="window.location.href='games/funnyshooter.html'">Funny Shooter </button>
+  <button class="button" onclick="window.location.href='games/retrobowl.html'">Retro Bowl </button>
+  <button class="button" onclick="window.location.href='games/annoyingfishgame.html'"> Tiny Fishing </button>
+  <button class="button" onclick="window.location.href='games/gachalife.html'">Gacha Life (Scratch Remake)</button>
+  <button class="button" onclick="window.location.href='games/deathrun3d.html'">Death Run 4D</button>
+  <button class="button" onclick="window.location.href='games/deadrails.html'">Dead Rails</button>
+  <button class="button" onclick="window.location.href='games/geodash.html'">Geometry Dash</button>
+  <button class="button" onclick="window.location.href='games/geodashsubzero.html'">Geometry Dash: Subzero</button>
+  <button class="button" onclick="window.location.href='games/peakgame.html'">Crazy Cattle 3D</button>
+  <button class="button" onclick="window.location.href='games/crossyroad.html'">Crossy Roads</button>
+  <button class="button" onclick="window.location.href='games/motorx3m.html'">Motor X3M</button>
+  <button class="button" onclick="window.location.href='games/pokestadium.html'">Pokemon Stadium</button>
+  <button class="button" onclick="window.location.href='games/badtimesim.html'">Bad Time Sim</button>
+  <button class="button" onclick="window.location.href='games/csgoclicker.html'">CSGO Clicker</button>
+  <button class="button" onclick="window.location.href='games/fnf.html'">Friday Night Funkin</button>
+  <button class="button" onclick="window.location.href='games/snowbattle.html'">SnowBattle.io</button>
+  <button class="button" onclick="window.location.href='games/ocarinaoftime.html'">The Legend of Zelda: Ocarina of Time</button>
+  <button class="button" onclick="window.location.href='games/superhot.html'">Super Hot</button>
+  <button class="button" onclick="window.location.href='games/metalgear.html'">Metal Gear Solid</button>
+  <button class="button" onclick="window.location.href='games/jetpackjoyride.html'">Jetpack Joyride</button>
+  <button class="button" onclick="window.location.href='games/fnaf1.html'">FNAF 1</button>
+  <button class="button" onclick="window.location.href='games/fnaf2.html'">FNAF 2</button>
+  <button class="button" onclick="window.location.href='games/fnaf3.html'">FNAF 3</button>
+  <button class="button" onclick="window.location.href='games/fnaf4.html'">FNAF 4</button>
+  <button class="button" onclick="window.location.href='games/basketbrosio.html'">BasketBros.io</button>
+  <button class="button" onclick="window.location.href='games/timeshooter.html'">Time Shooter</button>   
+  <div style="height: 40px;"></div>
+  <div style="display: flex; justify-content: center;">
+    <button class="button back-button" onclick="window.location.href='start.html'">Back</button>
+  </div>
+
+
+
+
+
+ <style>
+   
+  img {
+    display: block;
+    margin: auto;
+    width: 35%; /* change this value to adjust the size of the image */
+  }
+</style>
+
+  <style>
+    body {
+    color: rgb(0, 255, 255);
+      background-color:black;
+      font-family:Ubuntu;
+      background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    }
+  </style>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  // Get the select element
+  var select = document.getElementById("background-select");
+
+  // Set initial background image based on stored preference or default
+  var selectedBackground = localStorage.getItem("selectedBackground");
+  
+  if (selectedBackground) {
+    document.body.style.backgroundImage = "url(" + selectedBackground + ")";
+    select.value = selectedBackground;
+  }
+
+   // Listen for changes in the select element
+   select.addEventListener("change", function() {
+     var newBackground = this.value;
+     document.body.style.backgroundImage = "url(" + newBackground + ")";
+     localStorage.setItem("selectedBackground", newBackground);
+   });
+});
+
+  </script>
+
+
+
+<body>
+  <div class="dust-particle"></div></body>
+<style>
+  #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+</style>
+</head>
+<body>
+<div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS('particles-js', {
+      "particles": {
+          "number": {
+              "value": 160,
+              "density": {
+                  "enable": true,
+                  "value_area": 800
+              }
+          },
+          "color": {
+              "value": "#ffffff"
+          },
+          "shape": {
+              "type": "circle",
+              "stroke": {
+                  "width": 0,
+                  "color": "#000000"
+              },
+              "polygon": {
+                  "nb_sides": 5
+              },
+              "image": {
+                  "src": "img/github.svg",
+                  "width": 100,
+                  "height": 100
+              }
+          },
+          "opacity": {
+              "value": 1,
+              "random": true,
+              "anim": {
+                  "enable": true,
+                  "speed": 1,
+                  "opacity_min": 0,
+                  "sync": false
+              }
+          },
+          "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                  "enable": false,
+                  "speed": 4,
+                  "size_min": 0.3,
+                  "sync": false
+              }
+          },
+          "line_linked": {
+              "enable": false,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+          },
+          "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                  "enable": false,
+                  "rotateX": 600,
+                  "rotateY": 600
+              }
+          }
+      },
+      "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+              "onhover": {
+                  "enable": true,
+                  "mode": "bubble"
+              },
+              "onclick": {
+                  "enable": true,
+                  "mode": "repulse"
+              },
+              "resize": true
+          },
+          "modes": {
+              "grab": {
+                  "distance": 400,
+                  "line_linked": {
+                      "opacity": 1
+                  }
+              },
+              "bubble": {
+                  "distance": 250,
+                  "size": 0,
+                  "duration": 2,
+                  "opacity": 0,
+                  "speed": 3
+              },
+              "repulse": {
+                  "distance": 400,
+                  "duration": 0.4
+              },
+              "push": {
+                  "particles_nb": 4
+              },
+              "remove": {
+                  "particles_nb": 2
+              }
+          }
+      },
+      "retina_detect": true
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const favicon = document.querySelector("link[rel='icon']") || document.createElement("link");
+    favicon.rel = "icon";
+    document.head.appendChild(favicon);
+
+    const storedPreset = localStorage.getItem("selectedTabPreset") || "default";
+
+    switch (storedPreset) {
+      case "google":
+        document.title = "Google";
+        favicon.href = "https://www.google.com/favicon.ico";
+        break;
+      case "classroom":
+        document.title = "Google Classroom";
+        favicon.href = "https://www.gstatic.com/classroom/logo_square_rounded.svg";
+        break;
+      case "vocabulary":
+        document.title = "Vocabulary.com";
+        favicon.href = "https://www.vocabulary.com/favicon.ico";
+        break;
+      default:
+        document.title = "Games";
+        favicon.href = "favicon.ico";
+    }
+  });
+</script>
+</body>
+
+<script>
+// Fancy search filter for game buttons
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.getElementById('game-search');
+  const noResults = document.getElementById('no-results-message');
+  // Select all game buttons (exclude the Back button)
+  const gameButtons = Array.from(document.querySelectorAll('.button:not(.back-button)'));
+
+  function filterGames() {
+    const query = searchInput.value.trim().toLowerCase();
+    let matches = 0;
+    gameButtons.forEach(btn => {
+      const text = btn.textContent.toLowerCase();
+      if (text.includes(query)) {
+        btn.style.display = '';
+        matches++;
+      } else {
+        btn.style.display = 'none';
+      }
+    });
+    noResults.style.display = matches === 0 && query.length > 0 ? 'block' : 'none';
+  }
+
+  searchInput.addEventListener('input', filterGames);
+});
+</script>
+</html>
+</html>
