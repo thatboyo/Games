@@ -186,7 +186,15 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
    Copyright [2024] [DotLYHiyou]
+=======
+   Copyright [2024] [Dotlyhiyou]
+>>>>>>> 8cc096819a6f1e3faed3a7f1bbda00fdde19aa36
+=======
+   Copyright [2024] [Dotlyhiyou]
+>>>>>>> 8cc096819a6f1e3faed3a7f1bbda00fdde19aa36
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
