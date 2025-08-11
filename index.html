@@ -51,8 +51,6 @@
   const texts = [
     "ZenithHub",
     "Here We Go, Folks",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "Ima buy me and the boys some pizza after this...",
     "SEA SALT!",
     "50% Vibecoded lol",
@@ -63,7 +61,7 @@
     "FREE SCHLEP",
     "SPECTRE DO SOMETHING!",
     // Special entry for image
-    { type: "img", src: "media/AAAAH-.jpg", alt: "AAH" }
+    { type: "img", src: "media/AAAH-.jpg", alt: "AAH" }
   ];
 
   const random = texts[Math.floor(Math.random() * texts.length)];
@@ -73,21 +71,6 @@
   } else if (random.type === "img") {
     textDiv.innerHTML = `<img src="${random.src}" alt="${random.alt}" style="max-width:100px;max-height:100px;">`;
   }
-=======
-=======
->>>>>>> 8cc096819a6f1e3faed3a7f1bbda00fdde19aa36
-    "SEA SALT!",
-    "n0li when?",
-    "Where's BlackoutSearch, William?",
-    "Formerly BlackoutGames",
-    "Imagine having a 0.5 GPA",
-    "Don't Get Caught!"
-  ];
-  document.getElementById("random-text").textContent = texts[Math.floor(Math.random() * texts.length)];
-<<<<<<< HEAD
->>>>>>> 8cc096819a6f1e3faed3a7f1bbda00fdde19aa36
-=======
->>>>>>> 8cc096819a6f1e3faed3a7f1bbda00fdde19aa36
 </script>
 
 <script>
@@ -271,6 +254,23 @@
         favicon.href = "https://www.google.com/favicon.ico";
         break;
       case "classroom":
+        document.title = "Google Classroom";
+        favicon.href = "https://www.gstatic.com/classroom/logo_square_rounded.svg";
+        break;
+      case "vocabulary":
+        document.title = "Vocabulary.com";
+        favicon.href = "https://www.vocabulary.com/favicon.ico";
+        break;
+      default:
+        document.title = "ZenithHub";
+        favicon.href = "favicon.ico";
+    }
+  });
+</script>
+</body>
+
+</html>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
         document.title = "Google Classroom";
         favicon.href = "https://www.gstatic.com/classroom/logo_square_rounded.svg";
         break;
