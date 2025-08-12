@@ -130,22 +130,6 @@
     </style>
 </head>
 <body>
-    <!-- Changelog Modal -->
-    <div id="changelog-modal">
-      <div style="display: flex; flex-direction: column; align-items: center;">
-        <span id="close-changelog" style="position:absolute; top:12px; right:18px; font-size:1.5em; cursor:pointer; color:#00ffff; font-weight:bold;">&times;</span>
-        <h2 style="margin-top:0; font-size:2em; text-align:center;">Search Update</h2>
-        <ul style="text-align:left; font-size:1.1em; margin-bottom:0; margin-top:0;">
-          <li>Search is back yo</li>
-          <li>- 12 New Games!</li>
-          <li>- Combined all of the games pages into one</li>
-          <li>- Added search box in games page</li>
-          <li>- Improved UI and button styles</li>
-          <li>- Added this changelog popup</li>
-          <li>- Terminator was removed cuz aeza (the creators of Terminator) vanished and took it with them</li>
-        </ul>
-      </div>
-    </div>
 
     <h1>ZenithHub</h1>
     <p id="random-text" style="font-size:1.2em; margin:20px 0;"></p>
@@ -155,12 +139,11 @@
             "Ready to play some games?",
             "THE NETHER",
             "WE ARE ZENITHUB",
-            "Dont join cults, they make u cookoo",
             "There is some random creep who keeps begging for character.ai in the request form lol",
             "If you like skibidi toilet, get tf off my site.",
             "SPECTRE DO SOMETHING!!",
             "Fly, Eagles, Fly",
-            "Have a great day!"
+            "Zenithub V2"
         ];
         document.getElementById("random-text").textContent = texts[Math.floor(Math.random() * texts.length)];
     </script>
@@ -211,23 +194,6 @@
                     document.title = "ZenithHub";
                     favicon.href = "favicon.ico";
             }
-        });
-
-        // Changelog modal close logic
-        document.addEventListener("DOMContentLoaded", function() {
-          var modal = document.getElementById("changelog-modal");
-          var closeBtn = document.getElementById("close-changelog");
-          var moreBtn = document.getElementById("more-details-btn");
-          if (closeBtn) {
-            closeBtn.onclick = function() {
-              modal.style.display = "none";
-            };
-          }
-          if (moreBtn) {
-            moreBtn.onclick = function() {
-              window.location.href = "changelog.html";
-            };
-          }
         });
     </script>
 </body>
