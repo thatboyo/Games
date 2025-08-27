@@ -18,8 +18,9 @@ Visit the live website: [Zenithub](https://blackoutgames.netlify.app)
 - A wide variety of unblocked games and apps.
 - Integrated proxy to navigate the internet freely
 - Hosted on Netlify, Vercel, and Cloudflare Pages.
-- 
-## Topics
+- If you have to use Zenithub, but cant use it without getting blocked, go [here](https://zenithub.pages.dev/settings) and click "Tab Cloaker" as soon as the page appears.
+ If ur fast enough, the tab will open in about:blank and the other page will get blocked, leaving you with the full experience just with white border.
+## Topics 
 
 - cloudflare-pages
 - games
