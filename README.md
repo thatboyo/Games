@@ -1,5 +1,4 @@
 # Zenithub (formerly BlackoutGames)
-
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description
 
@@ -14,7 +13,7 @@ You thought I completely wiped BlackoutGames? I bundled the code to BlackoutGame
 Visit the live website: [Zenithub](https://blackoutgames.netlify.app)
 
 ## Features
-
+- For funnies, index.html has a small chance to show a dr.house meme
 - A wide variety of unblocked games and apps.
 - Integrated proxy to navigate the internet freely
 - Hosted on Netlify, Vercel, and Cloudflare Pages.
