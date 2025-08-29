@@ -136,7 +136,7 @@
     <p id="random-text" style="font-size:1.2em; margin:20px 0;"></p>
     <script>
         const texts = [
-           "GoGaurdian can kiss my ass",
+           "GoGaurdian sucks - T9",
             "Hi ig",
             "Ready to play some games?",
             "THE NETHER",
@@ -198,5 +198,28 @@
             }
         });
     </script>
+
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  // Get the select element
+  var select = document.getElementById("background-select");
+
+  // Set initial background image based on stored preference or default
+  var selectedBackground = localStorage.getItem("selectedBackground");
+  
+  if (selectedBackground) {
+    document.body.style.backgroundImage = "url(" + selectedBackground + ")";
+    select.value = selectedBackground;
+  }
+
+   // Listen for changes in the select element
+   select.addEventListener("change", function() {
+     var newBackground = this.value;
+     document.body.style.backgroundImage = "url(" + newBackground + ")";
+     localStorage.setItem("selectedBackground", newBackground);
+   });
+});
+
+  </script>
 </body>
 </html>
