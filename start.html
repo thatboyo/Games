@@ -1,3 +1,4 @@
+<!-- Most AI generated shit ever.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,6 +136,7 @@
     <p id="random-text" style="font-size:1.2em; margin:20px 0;"></p>
     <script>
         const texts = [
+           "GoGaurdian sucks - T9",
             "Hi ig",
             "Ready to play some games?",
             "THE NETHER",
@@ -160,7 +162,7 @@
     </div>
 
     <!-- Credits: Dont delete this or we're gonna have problems... -->
-     <p>Website created by DotLYHiyou on Github. Assisted by T9 and Skooplayz. Additional things by rcreator222 (i think thats his name)</p>
+     <p>Website created by DotLYHiyou on Github. Assisted by T9 and Skooplayz. Additional things by rcreator822</p>
      <!-- Discord Link-->
     <p><a href="https://discord.gg/U8tT8AazXb" target="_blank" style="color: white; text-decoration: underline;">Join the Discord Server</a></p>
 
@@ -196,5 +198,28 @@
             }
         });
     </script>
+
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  // Get the select element
+  var select = document.getElementById("background-select");
+
+  // Set initial background image based on stored preference or default
+  var selectedBackground = localStorage.getItem("selectedBackground");
+  
+  if (selectedBackground) {
+    document.body.style.backgroundImage = "url(" + selectedBackground + ")";
+    select.value = selectedBackground;
+  }
+
+   // Listen for changes in the select element
+   select.addEventListener("change", function() {
+     var newBackground = this.value;
+     document.body.style.backgroundImage = "url(" + newBackground + ")";
+     localStorage.setItem("selectedBackground", newBackground);
+   });
+});
+
+  </script>
 </body>
 </html>

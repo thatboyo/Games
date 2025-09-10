@@ -1,5 +1,4 @@
 # Zenithub (formerly BlackoutGames)
-
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description
 
@@ -14,12 +13,12 @@ You thought I completely wiped BlackoutGames? I bundled the code to BlackoutGame
 Visit the live website: [Zenithub](https://blackoutgames.netlify.app)
 
 ## Features
-
+- For funnies, index.html has a small chance to show a dr.house meme
 - A wide variety of unblocked games and apps.
 - Integrated proxy to navigate the internet freely
 - Hosted on Netlify, Vercel, and Cloudflare Pages.
-- 
-## Topics
+- If you have to use Zenithub, but cant use it without getting blocked, go [here](https://zenithub.pages.dev/launch) or https://(any zenithub link here)/launch
+## Topics 
 
 - cloudflare-pages
 - games
@@ -51,3 +50,5 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 - Thanks to everyone that supported Zenithub from the beginning.
 - Special thanks to Netlify, Vercel, and Cloudflare for their hosting services.
+- Credits to the owners of the games featured.
+- Credits to the Creators of UV Static 2.0 for the search. They are a master of their work.
